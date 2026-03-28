@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+
+# Data & Models
+data/*.csv
+# Note: Keep your .pkl files if you want others to run the model, 
+# but usually, large models are handled via Git LFS.
