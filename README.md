@@ -118,25 +118,30 @@ POST /predict
   }
 }
 ```
-🐳 Docker Setup
+# 🐳 Docker Setup
 Build Image
-docker build -t fraud-detection-api .
-Run Container
-docker run -p 8000:8000 fraud-detection-api
 
-💻 Local Setup
+```
+docker build -t fraud-detection-api .
+```
+Run Container
+```
+docker run -p 8000:8000 fraud-detection-api
+```
+
+## 💻 Local Setup
 1. Clone Repo
 git clone https://github.com/<your-username>/fraud-detection-deploy.git
 cd fraud-detection-deploy
-2. Install Dependencies
+3. Install Dependencies
 pip install -r requirements.txt
-3. Run Backend
+4. Run Backend
 uvicorn app.main:app --reload
-4. Run Frontend
+5. Run Frontend
 streamlit run frontend/streamlit_app.py
 
-📊 Model Details
-Algorithm: Random Forest
+## 📊 Model Details
+Algorithm: Random Forest+scaler
 Dataset: Credit Card Fraud Detection
 Imbalance Handling: SMOTE + Class Weights
 Evaluation Metrics:
@@ -145,20 +150,20 @@ Recall
 F1 Score
 ROC-AUC
 
-🔍 Advanced Features
+## 🔍 Advanced Features
 🔹 Threshold tuning
 🔹 Confidence scoring system
 🔹 Modular inference pipeline
 🔹 Production-level logging
 🔹 Scalable API design
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 Add SHAP explainability endpoint
 Deploy frontend on cloud
 Add authentication & rate limiting
 Integrate monitoring (Prometheus/Grafana)
 CI/CD pipeline (GitHub Actions)
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Laeba Jamil
