@@ -44,8 +44,8 @@ User → Streamlit UI → FastAPI Backend → ML Model → Response
 
 ## 📦 Project Structure
 
-
-'''fraud-detection-deploy/
+```
+fraud-detection-deploy/
 ├── app/
 │   ├── main.py          # FastAPI entry point
 │   ├── inference.py     # Model inference logic
@@ -59,8 +59,8 @@ User → Streamlit UI → FastAPI Backend → ML Model → Response
 │   └── final_model.pkl  # Trained model artifact
 ├── Dockerfile           # Containerization config
 ├── requirements.txt     # Dependencies
-└── README.md            # Project documentation'''
-
+└── README.md            # Project documentation
+```
 
 ---
 
