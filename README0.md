@@ -1,13 +1,157 @@
-# 💳 Real-Time Fraud Detection System
-An end-to-end ML deployment using FastAPI, Docker, and Streamlit.
+# 💳 Real-Time Fraud Detection System (Production-Grade)
 
-## 🚀 Features
-- **Model:** Tuned Random Forest (Handling Imbalanced Data).
-- **Backend:** FastAPI with custom inference thresholds.
-- **Frontend:** Streamlit dashboard for real-time testing.
-- **DevOps:** Fully containerized using Docker.
+## 🚀 Overview
 
-## 🛠️ How to Run
-1. **Docker:** `docker build -t fraud-api .`
-2. **Run:** `docker run -p 8000:8000 fraud-api`
-3. **API Docs:** Visit `http://localhost:8000/docs`
+This project is a **production-grade machine learning system** designed to detect fraudulent financial transactions in real time.
+
+Unlike typical ML projects, this system is fully deployed with:
+- Scalable backend API
+- Interactive frontend UI
+- Docker containerization
+- Cloud deployment
+
+---
+
+## 🧠 Problem Statement
+
+Financial fraud causes billions in losses annually. The goal is to build a system that can:
+
+- Detect fraud in real-time
+- Provide probability-based risk scoring
+- Be deployed as a production service
+
+---
+
+## 🏗️ System Architecture
+
+
+User → Streamlit UI → FastAPI Backend → ML Model → Response
+
+
+### Components:
+
+- **Frontend**: Streamlit (User Interface)
+- **Backend**: FastAPI (REST API)
+- **Model**: Random Forest Classifier
+- **Deployment**: Docker + Cloud
+- **Data Flow**:
+  - User inputs transaction features
+  - API processes request
+  - Model predicts fraud probability
+  - Response returned instantly
+
+---
+
+## 📦 Project Structure
+
+
+fraud-detection-deploy/
+├── app/
+│ ├── main.py # FastAPI entry point
+│ ├── inference.py # Model inference logic
+│ ├── schema.py # Input validation
+│ ├── logger.py # Logging system
+│ ├── config.py # Configurations
+│ ├── utils.py # Utility functions
+│
+├── frontend/
+│ └── streamlit_app.py
+│
+├── models/
+│ └── final_model.pkl
+│
+├── Dockerfile
+├── requirements.txt
+├── README.md
+
+
+---
+
+## ⚙️ Features
+
+- ✅ Real-time fraud prediction
+- ✅ Probability-based scoring
+- ✅ Confidence level classification
+- ✅ Input validation using Pydantic
+- ✅ Structured logging
+- ✅ Request tracking with unique IDs
+- ✅ Dockerized deployment
+- ✅ Cloud-hosted API
+
+---
+
+## 🌐 Live API
+
+🔗 https://fraud-detection-system-tpj1.onrender.com/docs
+
+> ⚠️ Note: On free-tier deployment, the service may take a few seconds to respond after inactivity due to cold start.
+
+---
+
+## 📡 API Usage
+
+### 🔹 Endpoint
+
+
+POST /predict
+
+
+### 🔹 Request Body
+
+{
+  "features": [0.1, -1.2, ..., 0.5]
+}
+🔹 Response
+{
+  "request_id": "uuid",
+  "result": {
+    "prediction": "FRAUD",
+    "probability": 0.91,
+    "confidence_level": "HIGH"
+  }
+}
+🐳 Docker Setup
+Build Image
+docker build -t fraud-detection-api .
+Run Container
+docker run -p 8000:8000 fraud-detection-api
+💻 Local Setup
+1. Clone Repo
+git clone https://github.com/<your-username>/fraud-detection-deploy.git
+cd fraud-detection-deploy
+2. Install Dependencies
+pip install -r requirements.txt
+3. Run Backend
+uvicorn app.main:app --reload
+4. Run Frontend
+streamlit run frontend/streamlit_app.py
+📊 Model Details
+Algorithm: Random Forest
+Dataset: Credit Card Fraud Detection
+Imbalance Handling: SMOTE + Class Weights
+Evaluation Metrics:
+Precision
+Recall
+F1 Score
+ROC-AUC
+🔍 Advanced Features
+🔹 Threshold tuning
+🔹 Confidence scoring system
+🔹 Modular inference pipeline
+🔹 Production-level logging
+🔹 Scalable API design
+🚀 Future Improvements
+Add SHAP explainability endpoint
+Deploy frontend on cloud
+Add authentication & rate limiting
+Integrate monitoring (Prometheus/Grafana)
+CI/CD pipeline (GitHub Actions)
+💼 Resume Highlights
+Built and deployed a real-time fraud detection system
+Designed scalable FastAPI backend for ML inference
+Implemented Docker-based containerization
+Deployed application on cloud platform
+Developed interactive frontend for predictions
+👨‍💻 Author
+
+Your Name
