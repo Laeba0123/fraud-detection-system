@@ -47,22 +47,19 @@ User → Streamlit UI → FastAPI Backend → ML Model → Response
 
 fraud-detection-deploy/
 ├── app/
-│ ├── main.py # FastAPI entry point
-│ ├── inference.py # Model inference logic
-│ ├── schema.py # Input validation
-│ ├── logger.py # Logging system
-│ ├── config.py # Configurations
-│ ├── utils.py # Utility functions
-│
+│   ├── main.py          # FastAPI entry point
+│   ├── inference.py     # Model inference logic
+│   ├── schema.py        # Input validation
+│   ├── logger.py        # Logging system
+│   ├── config.py        # Configurations
+│   └── utils.py         # Utility functions
 ├── frontend/
-│ └── streamlit_app.py
-│
+│   └── streamlit_app.py # Streamlit dashboard
 ├── models/
-│ └── final_model.pkl
-│
-├── Dockerfile
-├── requirements.txt
-├── README.md
+│   └── final_model.pkl  # Trained model artifact
+├── Dockerfile           # Containerization config
+├── requirements.txt     # Dependencies
+└── README.md            # Project documentation
 
 
 ---
