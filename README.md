@@ -141,28 +141,36 @@ uvicorn app.main:app --reload
 streamlit run frontend/streamlit_app.py
 
 ## 📊 Model Details
-Algorithm: Random Forest+scaler
-Dataset: Credit Card Fraud Detection
-Imbalance Handling: SMOTE + Class Weights
-Evaluation Metrics:
-Precision
-Recall
-F1 Score
-ROC-AUC
+
+- **Algorithm:** Random Forest  
+- **Dataset:** Credit Card Fraud Detection  
+- **Imbalance Handling:** SMOTE + Class Weights  
+
+**Evaluation Metrics:**
+- Precision  
+- Recall  
+- F1 Score  
+- ROC-AUC  
+
+---
 
 ## 🔍 Advanced Features
-🔹 Threshold tuning
-🔹 Confidence scoring system
-🔹 Modular inference pipeline
-🔹 Production-level logging
-🔹 Scalable API design
+
+- Threshold tuning  
+- Confidence scoring system  
+- Modular inference pipeline  
+- Production-level logging  
+- Scalable API design  
+
+---
 
 ## 🚀 Future Improvements
-Add SHAP explainability endpoint
-Deploy frontend on cloud
-Add authentication & rate limiting
-Integrate monitoring (Prometheus/Grafana)
-CI/CD pipeline (GitHub Actions)
+
+- Add SHAP explainability endpoint  
+- Deploy frontend on cloud  
+- Add authentication & rate limiting  
+- Integrate monitoring (Prometheus/Grafana)  
+- CI/CD pipeline (GitHub Actions)  
 
 ## 👨‍💻 Author
 
