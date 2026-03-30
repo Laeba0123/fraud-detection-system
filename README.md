@@ -39,7 +39,7 @@ User → Streamlit UI → FastAPI Backend → ML Model → Response
   - API processes request
   - Model predicts fraud probability
   - Response returned instantly
-###🔹 User Interface (Streamlit Frontend) - Normal Transaction Example
+### 🔹 User Interface (Streamlit Frontend) - Normal Transaction Example
  ![User Interface](assets/normal.png)
 ### 🔹 Fraud Prediction Example
 ![Fraud Prediction](assets/fraud.png)
@@ -123,6 +123,7 @@ Build Image
 docker build -t fraud-detection-api .
 Run Container
 docker run -p 8000:8000 fraud-detection-api
+
 💻 Local Setup
 1. Clone Repo
 git clone https://github.com/<your-username>/fraud-detection-deploy.git
@@ -133,6 +134,7 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 4. Run Frontend
 streamlit run frontend/streamlit_app.py
+
 📊 Model Details
 Algorithm: Random Forest
 Dataset: Credit Card Fraud Detection
@@ -142,12 +144,14 @@ Precision
 Recall
 F1 Score
 ROC-AUC
+
 🔍 Advanced Features
 🔹 Threshold tuning
 🔹 Confidence scoring system
 🔹 Modular inference pipeline
 🔹 Production-level logging
 🔹 Scalable API design
+
 🚀 Future Improvements
 Add SHAP explainability endpoint
 Deploy frontend on cloud
