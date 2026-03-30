@@ -95,6 +95,7 @@ POST /predict
 
 ### 🔹 Request Body
 
+```
 {
   "features": [0.1, -1.2, ..., 0.5]
 }
@@ -107,6 +108,7 @@ POST /predict
     "confidence_level": "HIGH"
   }
 }
+```
 🐳 Docker Setup
 Build Image
 docker build -t fraud-detection-api .
@@ -143,12 +145,7 @@ Deploy frontend on cloud
 Add authentication & rate limiting
 Integrate monitoring (Prometheus/Grafana)
 CI/CD pipeline (GitHub Actions)
-💼 Resume Highlights
-Built and deployed a real-time fraud detection system
-Designed scalable FastAPI backend for ML inference
-Implemented Docker-based containerization
-Deployed application on cloud platform
-Developed interactive frontend for predictions
+
 👨‍💻 Author
 
-Your Name
+Laeba Jamil
