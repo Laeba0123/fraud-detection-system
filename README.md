@@ -39,6 +39,15 @@ User → Streamlit UI → FastAPI Backend → ML Model → Response
   - API processes request
   - Model predicts fraud probability
   - Response returned instantly
+###🔹 User Interface (Streamlit Frontend) - Normal Transaction Example
+ ![User Interface](assets/normal.png)
+### 🔹 Fraud Prediction Example
+![Fraud Prediction](assets/fraud.png)
+### 🔹 API Documentation (FastAPI Swagger UI)
+![Swagger UI](assets/swagger.png)
+![response](assets/response.png)
+### 🔹 Docker Container Running (Backend Service)
+![Docker](assets/docker.png)
 
 ---
 
