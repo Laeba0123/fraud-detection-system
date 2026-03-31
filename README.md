@@ -1,6 +1,7 @@
 # 💳 Real-Time Fraud Detection System (Production-Grade)
 
 ## 🚀 Overview
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20API-green)](https://fraud-detection-system-tpj1.onrender.com/docs)
 
 This project is a **production-grade machine learning system** designed to detect fraudulent financial transactions in real time.
 
