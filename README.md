@@ -39,6 +39,28 @@ User → Streamlit UI → FastAPI Backend → ML Model → Response
   - API processes request
   - Model predicts fraud probability
   - Response returned instantly
+
+## 🧠 Model Serving Architecture
+
+The trained machine learning model is integrated within the FastAPI backend service.
+
+- The model (`final_model.pkl`) is loaded during API startup
+- All predictions are served via the `/predict` endpoint
+- The model is not exposed directly; it is accessed through the API layer
+
+This design follows industry best practices for deploying ML models as scalable services.
+
+## 🖥️ Frontend Usage
+
+The Streamlit frontend interacts with the deployed API.
+```
+API_URL = "https://fraud-detection-system-tpj1.onrender.com/predict"
+```
+### Run locally:
+```bash
+streamlit run frontend/streamlit_app.py
+```
+
 ### 🔹 User Interface (Streamlit Frontend) - Normal Transaction Example
  ![User Interface](assets/normal.png)
 ### 🔹 Fraud Prediction Example
