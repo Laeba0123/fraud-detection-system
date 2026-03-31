@@ -44,6 +44,7 @@ User → Streamlit UI → FastAPI Backend → ML Model → Response
 ### 🔹 Fraud Prediction Example
 ![Fraud Prediction](assets/fraud.png)
 ### 🔹 API Documentation (FastAPI Swagger UI)
+![Swagger UI](assets/swaggerUI.png)
 ![Swagger UI](assets/swagger.png)
 ![response](assets/response.png)
 ### 🔹 Docker Container Running (Backend Service)
